@@ -19,6 +19,11 @@
       <a href="#home" class="nav-logo">
         <img src="/images/logo.png" alt="Seba Seba" class="nav-logo-img">
       </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-slider"></span>
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="lang-option" data-lang="es">ES</span>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -33,11 +38,6 @@
         <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
         <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
-        <span class="lang-slider"></span>
-        <span class="lang-option active" data-lang="en">EN</span>
-        <span class="lang-option" data-lang="es">ES</span>
-      </button>
     </div>
   </nav>
 
@@ -73,311 +73,315 @@
 
       <div class="menu-tabs">
         <button class="menu-tab" data-category="breakfast" data-i18n="tab_breakfast">Desayuno</button>
-        <button class="menu-tab" data-category="appetizers" data-i18n="tab_appetizers">Aperitivos</button>
-        <button class="menu-tab" data-category="tipicos" data-i18n="tab_tipicos">Platos T&iacute;picos</button>
-        <button class="menu-tab" data-category="seafood" data-i18n="tab_seafood">Mariscos</button>
-        <button class="menu-tab" data-category="sandwiches" data-i18n="tab_sandwiches">Sandwiches</button>
+        <button class="menu-tab" data-category="mains" data-i18n="tab_mains">Platos Principales</button>
+        <button class="menu-tab" data-category="lunch" data-i18n="tab_lunch">Almuerzos</button>
+        <button class="menu-tab" data-category="sharing" data-i18n="tab_sharing">Para Compartir</button>
         <button class="menu-tab active" data-category="bakery" data-i18n="tab_bakery">Panader&iacute;a</button>
         <button class="menu-tab" data-category="beverages" data-i18n="tab_beverages">Bebidas</button>
+        <button class="menu-tab" data-category="extras" data-i18n="tab_extras">Postres y Extras</button>
       </div>
 
-      <!-- Breakfast -->
+      <!-- Breakfasts -->
       <div class="menu-category" id="cat-breakfast">
         <div class="menu-grid">
-          <div class="menu-item">
+          <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Arepa con Queso</h3>
-              <span class="menu-price">$4.45</span>
+              <h3>Seba Seba #1</h3>
+              <span class="menu-price">$20.00</span>
             </div>
-            <p data-i18n="mi_arepa_queso">Traditional corn cake with melted cheese</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Arepa con Carne</h3>
-              <span class="menu-price">$6.25</span>
-            </div>
-            <p data-i18n="mi_arepa_carne">Corn cake topped with seasoned shredded beef</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Huevos Pericos</h3>
-              <span class="menu-price">$5.95</span>
-            </div>
-            <p data-i18n="mi_huevos_pericos">Scrambled eggs with tomato and scallion, served with arepa</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Carne Asada con Huevos</h3>
-              <span class="menu-price">$8.75</span>
-            </div>
-            <p data-i18n="mi_carne_asada">Grilled steak with eggs, arepa, and rice</p>
+            <p data-i18n="mi_seba1">Calentado, huevos pericos, arepa con queso fresco y carne asada, chicharr&oacute;n o pechuga asada. Chocolate o caf&eacute;</p>
+            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
           </div>
           <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Calentado</h3>
-              <span class="menu-price">$7.50</span>
+              <h3>#2 El Criollo</h3>
+              <span class="menu-price">$18.00</span>
             </div>
-            <p data-i18n="mi_calentado">Reheated rice and beans with egg and arepa</p>
+            <p data-i18n="mi_criollo">Calentado, chorizo, aguacate y arepa peque&ntilde;a con queso fresco</p>
             <span class="menu-badge" data-i18n="badge_traditional">Traditional</span>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Changua</h3>
-              <span class="menu-price">$5.25</span>
+              <h3>#3 El Paisa</h3>
+              <span class="menu-price">$18.75</span>
             </div>
-            <p data-i18n="mi_changua">Colombian egg and milk soup with scallions</p>
+            <p data-i18n="mi_paisa">Carne asada o pechuga de pollo y arepa grande con queso fresco</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#4 Antioque&ntilde;o</h3>
+              <span class="menu-price">$16.25</span>
+            </div>
+            <p data-i18n="mi_antioqueno">Arroz revuelto con huevos y arepa peque&ntilde;a con queso fresco</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#5 Omelette SebaSeba</h3>
+              <span class="menu-price">$17.50</span>
+            </div>
+            <p data-i18n="mi_omelette">Omelette with eggs pericos, cheese, home fries, avocado, and toast</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#6 Croissant Sandwich</h3>
+              <span class="menu-price">$12.00</span>
+            </div>
+            <p data-i18n="mi_croissant_sand">Croissant with scrambled eggs, bacon, and American cheese</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#7 Don David</h3>
+              <span class="menu-price">$12.75</span>
+            </div>
+            <p data-i18n="mi_don_david">Arepa de choclo con queso fresco y huevos en cacerola</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#8 Waffles de Pandebono</h3>
+              <span class="menu-price">$13.50</span>
+            </div>
+            <p data-i18n="mi_waffles">Gluten-free pandebono waffle with eggs. Choose strawberry jam, Hershey's chocolate, or maple syrup</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#10 Campesino</h3>
+              <span class="menu-price">$15.25</span>
+            </div>
+            <p data-i18n="mi_campesino">Arepa grande con hogao, huevos revueltos y queso fresco</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>#11 Huevos Al Gusto</h3>
+              <span class="menu-price">$14.75</span>
+            </div>
+            <p data-i18n="mi_huevos_gusto">Choice of eggs, toast and home fries or calentado</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Migao</h3>
+              <span class="menu-price">$14.25</span>
+            </div>
+            <p data-i18n="mi_migao">Bu&ntilde;uelo, pandequeso, pan, tostada, queso fresco, todo remojado en chocolate</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa Grande con Queso</h3>
+              <span class="menu-price">$6.75</span>
+            </div>
+            <p data-i18n="mi_arepa_grande">Large corn cake with butter and fresh cheese</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dishes -->
+      <div class="menu-category" id="cat-mains">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Bandeja Paisa</h3>
+              <span class="menu-price">$24.45</span>
+            </div>
+            <p data-i18n="mi_bandeja">Arroz, fr&iacute;jol, maduro, carne asada, chorizo, chicharr&oacute;n, aguacate, arepa y huevo</p>
+            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
           </div>
           <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Chocolate Completo</h3>
-              <span class="menu-price">$6.95</span>
+              <h3>Minibandeja</h3>
+              <span class="menu-price">$20.75</span>
             </div>
-            <p data-i18n="mi_chocolate_completo">Hot chocolate with cheese, bread, and eggs</p>
+            <p data-i18n="mi_minibandeja">Arroz, fr&iacute;jol, maduro, porci&oacute;n de carne asada, chicharr&oacute;n, huevo y aguacate</p>
             <span class="menu-badge" data-i18n="badge_popular">Popular</span>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Tamal Tolimense</h3>
-              <span class="menu-price">$4.95</span>
+              <h3>Bistec A Caballo</h3>
+              <span class="menu-price">$22.50</span>
             </div>
-            <p data-i18n="mi_tamal">Steamed corn dough with chicken, pork, and vegetables</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Appetizers -->
-      <div class="menu-category" id="cat-appetizers">
-        <div class="menu-grid">
-          <div class="menu-item featured">
-            <div class="menu-item-header">
-              <h3>Pica Pica</h3>
-              <span class="menu-price">$13.45</span>
-            </div>
-            <p data-i18n="mi_pica_pica">Sampler platter with empanadas, chorizo, and chicharron</p>
-            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
+            <p data-i18n="mi_bistec">Grilled beef steak in creole sauce with fried eggs, rice, beans, and salad</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Alitas de Pollo</h3>
-              <span class="menu-price">$8.95</span>
+              <h3>Pechuga de Pollo a la Plancha</h3>
+              <span class="menu-price">$20.50</span>
             </div>
-            <p data-i18n="mi_alitas">Crispy chicken wings with house sauce</p>
+            <p data-i18n="mi_pechuga">Chicken breast, rice, beans, sweet plantain, and salad</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Tostones con Guacamole</h3>
-              <span class="menu-price">$6.95</span>
+              <h3>Carne A La Parrilla</h3>
+              <span class="menu-price">$19.50</span>
             </div>
-            <p data-i18n="mi_tostones_guac">Fried green plantains with fresh guacamole</p>
+            <p data-i18n="mi_carne_parrilla">Grilled beef steak, rice, beans, sweet plantain, and salad</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Patacones con Hogao</h3>
-              <span class="menu-price">$5.95</span>
-            </div>
-            <p data-i18n="mi_patacones">Crispy plantain rounds with tomato-onion sauce</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Chorizo Santarosano</h3>
-              <span class="menu-price">$5.25</span>
-            </div>
-            <p data-i18n="mi_chorizo">Grilled Colombian chorizo sausage</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Chicharron</h3>
-              <span class="menu-price">$7.50</span>
-            </div>
-            <p data-i18n="mi_chicharron">Crispy fried pork belly</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Platos Tipicos -->
-      <div class="menu-category" id="cat-tipicos">
-        <div class="menu-grid">
-          <div class="menu-item featured">
-            <div class="menu-item-header">
-              <h3>Bandeja Mixta</h3>
-              <span class="menu-price">$16.95</span>
-            </div>
-            <p data-i18n="mi_bandeja">Rice, beans, chicharron, chorizo, egg, arepa, avocado, and plantain</p>
-            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Churrasco</h3>
-              <span class="menu-price">$17.75</span>
-            </div>
-            <p data-i18n="mi_churrasco">Grilled skirt steak with rice, beans, and salad</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Entra&ntilde;a Asada</h3>
-              <span class="menu-price">$18.25</span>
-            </div>
-            <p data-i18n="mi_entrana">Grilled flank steak with chimichurri</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Sobrebarriga</h3>
-              <span class="menu-price">$14.95</span>
-            </div>
-            <p data-i18n="mi_sobrebarriga">Braised flank steak in creole sauce with potatoes</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Lengua en Salsa</h3>
-              <span class="menu-price">$13.95</span>
-            </div>
-            <p data-i18n="mi_lengua">Beef tongue in rich tomato sauce</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Sancocho</h3>
-              <span class="menu-price">$12.50</span>
-            </div>
-            <p data-i18n="mi_sancocho">Hearty Colombian chicken soup with corn, plantain, and yuca</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Ajiaco</h3>
-              <span class="menu-price">$12.50</span>
-            </div>
-            <p data-i18n="mi_ajiaco">Traditional Bogota chicken soup with potatoes and corn</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Arepa Rellena de Pollo</h3>
-              <span class="menu-price">$7.95</span>
-            </div>
-            <p data-i18n="mi_arepa_pollo">Stuffed arepa with seasoned shredded chicken</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Arepa Rellena de Carne</h3>
-              <span class="menu-price">$7.95</span>
-            </div>
-            <p data-i18n="mi_arepa_carne_r">Stuffed arepa with seasoned shredded beef</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Arepa de Choclo</h3>
-              <span class="menu-price">$6.95</span>
-            </div>
-            <p data-i18n="mi_arepa_choclo">Sweet corn arepa with cheese</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Seafood -->
-      <div class="menu-category" id="cat-seafood">
-        <div class="menu-grid">
-          <div class="menu-item featured">
-            <div class="menu-item-header">
-              <h3>Pargo Rojo Frito</h3>
-              <span class="menu-price">$21.95</span>
-            </div>
-            <p data-i18n="mi_pargo">Whole fried red snapper with coconut rice</p>
-            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Camarones al Ajillo</h3>
-              <span class="menu-price">$18.95</span>
-            </div>
-            <p data-i18n="mi_camarones">Garlic shrimp with rice and salad</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>El Pescador</h3>
+              <h3>Cazuela De Fr&iacute;jol</h3>
               <span class="menu-price">$19.95</span>
             </div>
-            <p data-i18n="mi_pescador">Seafood platter with fish, shrimp, and calamari</p>
+            <p data-i18n="mi_cazuela_frijol">Chicharr&oacute;n, chorizo, maduro, aguacate, papa crocante, arroz y arepita</p>
           </div>
-          <div class="menu-item">
+          <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Mojarra Frita</h3>
-              <span class="menu-price">$16.95</span>
+              <h3>Picada (2-3 People)</h3>
+              <span class="menu-price">$45.00</span>
             </div>
-            <p data-i18n="mi_mojarra">Whole fried tilapia with patacones</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Cazuela de Mariscos</h3>
-              <span class="menu-price">$17.95</span>
-            </div>
-            <p data-i18n="mi_cazuela">Creamy seafood stew with coconut</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Filete de Pescado</h3>
-              <span class="menu-price">$11.95</span>
-            </div>
-            <p data-i18n="mi_filete">Grilled fish fillet with rice and salad</p>
+            <p data-i18n="mi_picada">Steak, chicken, chorizo, chicharr&oacute;n, red potato, creole potato, arepa, plantain, lime, and yuca</p>
+            <span class="menu-badge" data-i18n="badge_share">To Share</span>
           </div>
         </div>
       </div>
 
-      <!-- Sandwiches -->
-      <div class="menu-category" id="cat-sandwiches">
+      <!-- Lunch Daily Specials -->
+      <div class="menu-category" id="cat-lunch">
         <div class="menu-grid">
-          <div class="menu-item">
+          <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Hamburguesa Colombiana</h3>
-              <span class="menu-price">$6.95</span>
+              <h3>Ajiaco</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_hamburguesa">Colombian-style burger with all the fixings</p>
+            <p data-i18n="mi_ajiaco">Colombian chicken and potato soup with rice, salad, and stewed chicken</p>
+            <span class="menu-badge" data-i18n="badge_traditional">Traditional</span>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Sancocho De Gallina</h3>
+              <span class="menu-price">$14.75</span>
+            </div>
+            <p data-i18n="mi_sancocho_gallina">Hen soup with stewed hen, rice, and salad</p>
+            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Perro Caliente Colombiano</h3>
-              <span class="menu-price">$6.00</span>
+              <h3>Cazuela De Fr&iacute;jol</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_perro">Colombian hot dog with pineapple sauce and crushed chips</p>
+            <p data-i18n="mi_cazuela_lunch">Bean casserole with rice, chicharr&oacute;n, sweet plantain, and arepa</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Sandwich de Pollo</h3>
-              <span class="menu-price">$6.50</span>
+              <h3>Sancocho De Carne</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_sandwich_pollo">Grilled chicken sandwich</p>
+            <p data-i18n="mi_sancocho_carne">Beef sancocho with rice, salad, and beef in goulash</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Burrito de Carne</h3>
-              <span class="menu-price">$10.95</span>
+              <h3>Sancocho De Cola De Res</h3>
+              <span class="menu-price">$15.75</span>
             </div>
-            <p data-i18n="mi_burrito_carne">Beef burrito with rice, beans, and salsa</p>
+            <p data-i18n="mi_sancocho_cola">Oxtail Colombian soup with stewed oxtail, rice, and salad</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Burrito de Pollo</h3>
-              <span class="menu-price">$9.95</span>
+              <h3>Mondongo</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_burrito_pollo">Chicken burrito with rice, beans, and salsa</p>
+            <p data-i18n="mi_mondongo">Tripe soup with rice, salad, and sweet plantain</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Quesadilla de Carne</h3>
-              <span class="menu-price">$8.95</span>
+              <h3>Caldo De Costilla</h3>
+              <span class="menu-price">$15.75</span>
             </div>
-            <p data-i18n="mi_quesadilla">Beef quesadilla with cheese and peppers</p>
+            <p data-i18n="mi_caldo_costilla">Rib beef broth with rice and salad</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Tacos de Carne</h3>
-              <span class="menu-price">$7.95</span>
+              <h3>Sancocho De Pescado</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_tacos">Three beef tacos with cilantro and onion</p>
+            <p data-i18n="mi_sancocho_pescado">Fish soup with rice, salad, and fish fillet in garlic sauce</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Nachos Supreme</h3>
-              <span class="menu-price">$12.50</span>
+              <h3>Sopa De Pollo</h3>
+              <span class="menu-price">$14.75</span>
             </div>
-            <p data-i18n="mi_nachos">Loaded nachos with beef, cheese, and jalape&ntilde;os</p>
+            <p data-i18n="mi_sopa_pollo">Chicken soup with baked chicken, rice, and salad</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Sopa Sola</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p data-i18n="mi_sopa_sola">Soup only (any variety)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- To Share + Mini Bites -->
+      <div class="menu-category" id="cat-sharing">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Arepa Mafalda</h3>
+              <span class="menu-price">$16.75</span>
+            </div>
+            <p data-i18n="mi_mafalda">Fried corn cake with ham, mozzarella, mayo, pineapple, and grilled chicken</p>
+            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pandebono Slider</h3>
+              <span class="menu-price">$15.00</span>
+            </div>
+            <p data-i18n="mi_slider">2 pandebono sliders with shredded beef, guacamole, and fresh cheese</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Salchipapa</h3>
+              <span class="menu-price">$15.00</span>
+            </div>
+            <p data-i18n="mi_salchipapa">French fries, creole potato, beef sausage with pink sauce</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tostones Con Guacamole</h3>
+              <span class="menu-price">$12.25</span>
+            </div>
+            <p data-i18n="mi_tostones_guac">Fried green plantains with a side of guacamole</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Ensalada De La Casa</h3>
+              <span class="menu-price">$11.00</span>
+            </div>
+            <p data-i18n="mi_ensalada">Lettuce, tomato, red onion, and croutons. Caesar or French dressing</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Empanada De Carne</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_empanada_carne">Beef pattie</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Empanada De Pollo</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_empanada_pollo">Chicken pattie</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chorizo</h3>
+              <span class="menu-price">$5.50</span>
+            </div>
+            <p data-i18n="mi_chorizo">Pork sausage served with small corn cake or red potato</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chicharr&oacute;n</h3>
+              <span class="menu-price">$7.25</span>
+            </div>
+            <p data-i18n="mi_chicharron">Pork belly served with small corn cake or red potato</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Papa Rellena</h3>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p data-i18n="mi_papa_rellena">Stuffed potato</p>
           </div>
         </div>
       </div>
@@ -387,23 +391,16 @@
         <div class="menu-grid sides-grid">
           <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Pan de Bono</h3>
-              <span class="menu-price">$1.25</span>
+              <h3>Pandebono</h3>
+              <span class="menu-price">$2.50</span>
             </div>
-            <p data-i18n="mi_pan_bono">Traditional Colombian cheese bread</p>
+            <p data-i18n="mi_pandebono">Traditional Colombian cheese bread</p>
             <span class="menu-badge badge-heritage">Desde 1987</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Empanada</h3>
-              <span class="menu-price">$1.25</span>
-            </div>
-            <p data-i18n="mi_empanada">Crispy corn turnover with seasoned beef</p>
           </div>
           <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Bu&ntilde;uelo</h3>
-              <span class="menu-price">$1.00</span>
+              <h3>Bu&ntilde;uelos</h3>
+              <span class="menu-price">$2.50</span>
             </div>
             <p data-i18n="mi_bunuelo">Golden fried cheese ball</p>
             <span class="menu-badge" data-i18n="badge_signature">Signature</span>
@@ -411,130 +408,311 @@
           <div class="menu-item">
             <div class="menu-item-header">
               <h3>Almojabana</h3>
-              <span class="menu-price">$1.50</span>
+              <span class="menu-price">$3.00</span>
             </div>
             <p data-i18n="mi_almojabana">Sweet corn and cheese bread roll</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Croissant</h3>
-              <span class="menu-price">$2.50</span>
-            </div>
-            <p data-i18n="mi_croissant">Freshly baked butter croissant</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Pastel de Pollo</h3>
-              <span class="menu-price">$2.75</span>
-            </div>
-            <p data-i18n="mi_pastel_pollo">Flaky pastry filled with seasoned chicken</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Pastel de Arequipe</h3>
-              <span class="menu-price">$2.50</span>
-            </div>
-            <p data-i18n="mi_pastel_arequipe">Pastry filled with dulce de leche</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Rosc&oacute;n</h3>
-              <span class="menu-price">$1.75</span>
-            </div>
-            <p data-i18n="mi_roscon">Traditional Colombian sweet bread ring</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Pan de Queso</h3>
-              <span class="menu-price">$1.50</span>
+              <h3>Pan Con Queso</h3>
+              <span class="menu-price">$3.25</span>
             </div>
             <p data-i18n="mi_pan_queso">Cheese-filled bread roll</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Torta de Chocolate</h3>
-              <span class="menu-price">$3.75</span>
+              <h3>Pandequeso Montanero</h3>
+              <span class="menu-price">$2.50</span>
             </div>
-            <p data-i18n="mi_torta_choc">Rich Colombian chocolate cake slice</p>
+            <p data-i18n="mi_pandequeso_m">Mountain-style cheese bread</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Tres Leches</h3>
-              <span class="menu-price">$3.50</span>
+              <h3>Pandequeso Paisa</h3>
+              <span class="menu-price">$3.00</span>
             </div>
-            <p data-i18n="mi_tres_leches">Three milk cake, a Latin classic</p>
+            <p data-i18n="mi_pandequeso_p">Paisa-style cheese bread</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Pandebono con Bocadillo</h3>
-              <span class="menu-price">$2.00</span>
+              <h3>Pandeyuca</h3>
+              <span class="menu-price">$2.50</span>
             </div>
-            <p data-i18n="mi_pandebono_bocadillo">Cheese bread with guava paste</p>
+            <p data-i18n="mi_pandeyuca">Yuca cheese bread</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa De Choclo</h3>
+              <span class="menu-price">$4.00</span>
+            </div>
+            <p data-i18n="mi_arepa_choclo">Sweet corn arepa</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Achiras</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_achiras">Traditional cheese crackers</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Croissant</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_croissant">Freshly baked butter croissant</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pastel De Arequipe</h3>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p data-i18n="mi_pastel_arequipe">Pastry filled with dulce de leche</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pastel De Guayaba</h3>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p data-i18n="mi_pastel_guayaba">Pastry filled with guava</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Dedito De Guayaba</h3>
+              <span class="menu-price">$1.50</span>
+            </div>
+            <p data-i18n="mi_dedito_guayaba">Cheese and guava jelly finger</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Dedito De Queso</h3>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p data-i18n="mi_dedito_queso">Cheese finger</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Mogollas</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_mogollas">Colombian bread rolls</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pan De Leche</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_pan_leche">Milk bread</p>
           </div>
         </div>
       </div>
 
-      <!-- Beverages -->
+      <!-- Beverages (Drinks + Natural Juices) -->
       <div class="menu-category" id="cat-beverages">
         <div class="menu-grid sides-grid">
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Caf&eacute; Colombiano</h3>
-              <span class="menu-price">$2.00</span>
-            </div>
-            <p data-i18n="mi_cafe">Fresh brewed Colombian coffee</p>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-header">
-              <h3>Chocolate Caliente</h3>
-              <span class="menu-price">$3.00</span>
-            </div>
-            <p data-i18n="mi_chocolate">Traditional hot chocolate with cheese</p>
-          </div>
           <div class="menu-item featured">
             <div class="menu-item-header">
-              <h3>Jugo Natural</h3>
-              <span class="menu-price">$3.50</span>
+              <h3>Jugos Naturales</h3>
+              <span class="menu-price">$7.00</span>
             </div>
-            <p data-i18n="mi_jugo">Fresh squeezed fruit juice (mango, guanabana, lulo, mora)</p>
+            <p data-i18n="mi_jugos">Fresh fruit juice: guayaba, lulo, papaya, maracuy&aacute;, guan&aacute;bana, mango, or mora</p>
             <span class="menu-badge badge-fresh" data-i18n="badge_fresh">Fresh</span>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Agua de Panela</h3>
-              <span class="menu-price">$2.50</span>
+              <h3>Caf&eacute; Peque&ntilde;o</h3>
+              <span class="menu-price">$3.25</span>
             </div>
-            <p data-i18n="mi_panela">Traditional sugarcane water with lime</p>
+            <p data-i18n="mi_cafe_peq">Small Colombian coffee</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Cerveza Nacional</h3>
+              <h3>Caf&eacute; Grande</h3>
               <span class="menu-price">$4.50</span>
             </div>
-            <p data-i18n="mi_cerveza">Colombian beer (Aguila, Club Colombia, Poker)</p>
+            <p data-i18n="mi_cafe_grande">Large coffee with milk and sugar</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Caf&eacute; Helado</h3>
+              <span class="menu-price">$5.50</span>
+            </div>
+            <p data-i18n="mi_cafe_helado">Iced coffee</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Iced Coffee Cream</h3>
+              <span class="menu-price">$6.50</span>
+            </div>
+            <p data-i18n="mi_coffee_cream">Iced coffee with cream</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chocolate Grande</h3>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p data-i18n="mi_chocolate_grande">Large traditional hot chocolate</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Milo Caliente</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p data-i18n="mi_milo_cal">Hot Milo chocolate drink</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Milo Fr&iacute;o</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p data-i18n="mi_milo_frio">Cold Milo chocolate drink</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Champ&uacute;s</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p data-i18n="mi_champus">Traditional Colombian corn and fruit drink</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Salpic&oacute;n</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p data-i18n="mi_salpicon">Colombian fruit cocktail with fresh fruit</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
               <h3>Avena</h3>
-              <span class="menu-price">$3.00</span>
+              <span class="menu-price">$6.00</span>
             </div>
-            <p data-i18n="mi_avena">Colombian oat drink, served cold</p>
+            <p data-i18n="mi_avena">Colombian oat drink</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Arom&aacute;tica</h3>
-              <span class="menu-price">$2.50</span>
+              <h3>Aguapanela Fr&iacute;a Con Lim&oacute;n</h3>
+              <span class="menu-price">$5.00</span>
             </div>
-            <p data-i18n="mi_aromatica">Herbal tea infusion</p>
+            <p data-i18n="mi_aguapanela">Cold sugarcane water with lime</p>
           </div>
           <div class="menu-item">
             <div class="menu-item-header">
-              <h3>Malta</h3>
-              <span class="menu-price">$2.50</span>
+              <h3>Limonada</h3>
+              <span class="menu-price">$4.00</span>
+            </div>
+            <p data-i18n="mi_limonada">Fresh squeezed lemonade (12oz)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pony Malta</h3>
+              <span class="menu-price">$3.50</span>
             </div>
             <p data-i18n="mi_malta">Non-alcoholic malt beverage</p>
           </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Sodas Colombianas</h3>
+              <span class="menu-price">$3.50</span>
+            </div>
+            <p data-i18n="mi_sodas">Colombian bottled sodas</p>
+          </div>
         </div>
+      </div>
+
+      <!-- Desserts & Side Orders -->
+      <div class="menu-category" id="cat-extras">
+        <div class="menu-grid sides-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Postre De Tres Leches</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p data-i18n="mi_tres_leches">Three milk cake</p>
+            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Flan De Caramelo</h3>
+              <span class="menu-price">$7.00</span>
+            </div>
+            <p data-i18n="mi_flan">Caramel custard</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Milhoja</h3>
+              <span class="menu-price">$7.00</span>
+            </div>
+            <p data-i18n="mi_milhoja">Colombian mille-feuille pastry</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Mazamorra</h3>
+              <span class="menu-price">$8.00</span>
+            </div>
+            <p data-i18n="mi_mazamorra">Traditional corn dessert served with whole milk</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Guacamole</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p data-i18n="mi_guacamole">Fresh guacamole</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Maduros</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p data-i18n="mi_maduros">Fried sweet plantains</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tostones</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p data-i18n="mi_tostones">Fried green plantains</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Papitas Fritas</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p data-i18n="mi_papitas">French fries</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arroz</h3>
+              <span class="menu-price">$6.00&ndash;$8.00</span>
+            </div>
+            <p data-i18n="mi_arroz">Rice (small $6 / large $8)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Fr&iacute;joles</h3>
+              <span class="menu-price">$7.00&ndash;$10.00</span>
+            </div>
+            <p data-i18n="mi_frijoles">Beans (small $7 / large $10)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Aguacate</h3>
+              <span class="menu-price">$5.00</span>
+            </div>
+            <p data-i18n="mi_aguacate">Sliced avocado</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-order-buttons">
+        <a href="https://www.ubereats.com/store/seba-seba-bakery/PaEK19zDSPOZvtOv-evGBQ" target="_blank" rel="noopener" class="btn-order btn-ubereats">
+          <span class="btn-order-brand">Uber Eats</span>
+          <span class="btn-order-divider"></span>
+          <span data-i18n="btn_ubereats">Order Now</span>
+        </a>
+        <a href="https://www.doordash.com/store/seba-seba-bakery-flushing-26155368/" target="_blank" rel="noopener" class="btn-order btn-doordash">
+          <span class="btn-order-brand">DoorDash</span>
+          <span class="btn-order-divider"></span>
+          <span data-i18n="btn_doordash">Order Now</span>
+        </a>
       </div>
     </div>
   </section>
@@ -815,6 +993,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation">
+    <a href="#home" class="bottom-nav-item active" data-section="home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span data-i18n="nav_home">Home</span>
+    </a>
+    <a href="#menu" class="bottom-nav-item" data-section="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      <span data-i18n="nav_menu">Menu</span>
+    </a>
+    <a href="#gallery" class="bottom-nav-item" data-section="gallery">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span data-i18n="nav_gallery">Gallery</span>
+    </a>
+    <a href="#locations" class="bottom-nav-item" data-section="locations">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span data-i18n="nav_locations">Locations</span>
+    </a>
+    <a href="#contact" class="bottom-nav-item" data-section="contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span data-i18n="nav_contact">Contact</span>
+    </a>
+  </nav>
 
   <script src="/js/main.js"></script>
   <script src="/js/i18n.js"></script>
