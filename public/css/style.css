@@ -1393,26 +1393,23 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   :root { --nav-height: 60px; }
 
-  /* iOS: background-attachment: fixed is broken — use tiled pattern with warm overlay */
+  /* iOS: background-attachment: fixed is broken — simulate parallax with clip-path trick */
   .menu,
   .locations {
-    background-attachment: scroll;
-    background-size: 400px auto;
-    background-repeat: repeat;
+    background: none;
     position: relative;
+    clip-path: inset(0);
+    -webkit-clip-path: inset(0);
   }
   .menu::before,
   .locations::before {
     content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      175deg,
-      rgba(250, 245, 237, 0.55) 0%,
-      rgba(245, 230, 210, 0.45) 30%,
-      rgba(240, 220, 190, 0.50) 60%,
-      rgba(250, 245, 237, 0.55) 100%
-    );
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg) url('/images/IMG_8023.PNG') center/cover no-repeat;
     pointer-events: none;
     z-index: 0;
   }
