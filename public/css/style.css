@@ -1526,8 +1526,10 @@ ul { list-style: none; }
   }
 
   /* Order buttons */
-  .menu-order-buttons { flex-direction: column; margin-top: 24px; }
-  .btn-order { justify-content: center; min-height: 48px; font-size: 0.92rem; }
+  .menu-order-buttons { flex-direction: row; justify-content: center; margin-top: 24px; gap: 10px; }
+  .btn-order { justify-content: center; min-height: 0; font-size: 0.82rem; }
+  .btn-order-brand { padding: 10px 12px; font-size: 0.82rem; }
+  .btn-order span:last-child { padding: 10px 12px; }
 
   /* Menu grid */
   .menu-grid { grid-template-columns: 1fr; gap: 12px; }
