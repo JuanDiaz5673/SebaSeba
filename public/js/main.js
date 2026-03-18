@@ -38,19 +38,41 @@ document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
-// Active nav link on scroll
+// Active nav link on scroll (top nav + bottom nav)
 const sections = document.querySelectorAll('section[id]');
+const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY + 120;
+  let currentSection = '';
+
   sections.forEach(section => {
     const top = section.offsetTop;
     const height = section.offsetHeight;
     const id = section.getAttribute('id');
     const link = document.querySelector(`.nav-link[href="#${id}"]`);
+    const isActive = scrollY >= top && scrollY < top + height;
     if (link) {
-      link.classList.toggle('active', scrollY >= top && scrollY < top + height);
+      link.classList.toggle('active', isActive);
+    }
+    if (isActive) {
+      currentSection = id;
     }
   });
+
+  // Update bottom nav active state
+  bottomNavItems.forEach(item => {
+    const section = item.dataset.section;
+    // Map sections that don't have their own bottom nav item
+    const mapped = (currentSection === 'reviews' || currentSection === 'instagram' || currentSection === 'about')
+      ? 'gallery' : currentSection;
+    item.classList.toggle('active', section === mapped);
+  });
+});
+
+// Close mobile menu when bottom nav is tapped
+bottomNavItems.forEach(item => {
+  item.addEventListener('click', closeMenu);
 });
 
 // Menu tabs
