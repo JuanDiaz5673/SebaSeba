@@ -1393,10 +1393,33 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   :root { --nav-height: 60px; }
 
-  /* iOS: background-attachment: fixed is broken */
+  /* iOS: background-attachment: fixed is broken — use tiled pattern with warm overlay */
   .menu,
   .locations {
     background-attachment: scroll;
+    background-size: 400px auto;
+    background-repeat: repeat;
+    position: relative;
+  }
+  .menu::before,
+  .locations::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      175deg,
+      rgba(250, 245, 237, 0.55) 0%,
+      rgba(245, 230, 210, 0.45) 30%,
+      rgba(240, 220, 190, 0.50) 60%,
+      rgba(250, 245, 237, 0.55) 100%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+  .menu > .container,
+  .locations > .container {
+    position: relative;
+    z-index: 1;
   }
 
   /* Navbar — always dark on mobile */
