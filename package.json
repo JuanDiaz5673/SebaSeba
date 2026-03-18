@@ -1,0 +1,12 @@
+{
+  "name": "sebaseba",
+  "version": "1.0.0",
+  "description": "Website for Seba Seba Colombian Bakery & Restaurant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

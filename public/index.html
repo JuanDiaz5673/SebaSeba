@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seba Seba | Colombian Bakery & Restaurant — Since 1987</title>
+  <meta name="description" content="Seba Seba — Authentic Colombian bakery and restaurant in Jackson Heights & Corona, Queens. Fresh-baked bread, empanadas, bandeja paisa, and more since 1987.">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="/images/logo.png" alt="Seba Seba" class="nav-logo-img">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+        <li><a href="#menu" class="nav-link" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+        <li><a href="#locations" class="nav-link" data-i18n="nav_locations">Locations</a></li>
+        <li><a href="#instagram" class="nav-link" data-i18n="nav_instagram">Instagram</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-slider"></span>
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="lang-option" data-lang="es">ES</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">Since 1987</div>
+      <h1 class="hero-title">
+        <span class="title-seba">Seba</span> <span class="title-seba-accent">Seba</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Colombian Bakery &amp; Restaurant</p>
+      <p class="hero-text" data-i18n="hero_text">Fresh-baked bread, golden empanadas, and the rich flavors of Colombia — served with love in Jackson Heights since 1987.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary" data-i18n="hero_btn_menu">View Our Menu</a>
+        <a href="#locations" class="btn btn-outline" data-i18n="hero_btn_location">Find a Location</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="menu_tag">Our Menu</span>
+        <h2 class="section-title" data-i18n="menu_title">Authentic Colombian Flavors</h2>
+        <p class="section-desc" data-i18n="menu_desc">From our famous bakery to traditional Colombian dishes, every recipe tells a story</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab" data-category="breakfast" data-i18n="tab_breakfast">Desayuno</button>
+        <button class="menu-tab" data-category="appetizers" data-i18n="tab_appetizers">Aperitivos</button>
+        <button class="menu-tab" data-category="tipicos" data-i18n="tab_tipicos">Platos T&iacute;picos</button>
+        <button class="menu-tab" data-category="seafood" data-i18n="tab_seafood">Mariscos</button>
+        <button class="menu-tab" data-category="sandwiches" data-i18n="tab_sandwiches">Sandwiches</button>
+        <button class="menu-tab active" data-category="bakery" data-i18n="tab_bakery">Panader&iacute;a</button>
+        <button class="menu-tab" data-category="beverages" data-i18n="tab_beverages">Bebidas</button>
+      </div>
+
+      <!-- Breakfast -->
+      <div class="menu-category" id="cat-breakfast">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa con Queso</h3>
+              <span class="menu-price">$4.45</span>
+            </div>
+            <p data-i18n="mi_arepa_queso">Traditional corn cake with melted cheese</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa con Carne</h3>
+              <span class="menu-price">$6.25</span>
+            </div>
+            <p data-i18n="mi_arepa_carne">Corn cake topped with seasoned shredded beef</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Huevos Pericos</h3>
+              <span class="menu-price">$5.95</span>
+            </div>
+            <p data-i18n="mi_huevos_pericos">Scrambled eggs with tomato and scallion, served with arepa</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Carne Asada con Huevos</h3>
+              <span class="menu-price">$8.75</span>
+            </div>
+            <p data-i18n="mi_carne_asada">Grilled steak with eggs, arepa, and rice</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Calentado</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p data-i18n="mi_calentado">Reheated rice and beans with egg and arepa</p>
+            <span class="menu-badge" data-i18n="badge_traditional">Traditional</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Changua</h3>
+              <span class="menu-price">$5.25</span>
+            </div>
+            <p data-i18n="mi_changua">Colombian egg and milk soup with scallions</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Chocolate Completo</h3>
+              <span class="menu-price">$6.95</span>
+            </div>
+            <p data-i18n="mi_chocolate_completo">Hot chocolate with cheese, bread, and eggs</p>
+            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tamal Tolimense</h3>
+              <span class="menu-price">$4.95</span>
+            </div>
+            <p data-i18n="mi_tamal">Steamed corn dough with chicken, pork, and vegetables</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Appetizers -->
+      <div class="menu-category" id="cat-appetizers">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Pica Pica</h3>
+              <span class="menu-price">$13.45</span>
+            </div>
+            <p data-i18n="mi_pica_pica">Sampler platter with empanadas, chorizo, and chicharron</p>
+            <span class="menu-badge" data-i18n="badge_popular">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Alitas de Pollo</h3>
+              <span class="menu-price">$8.95</span>
+            </div>
+            <p data-i18n="mi_alitas">Crispy chicken wings with house sauce</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tostones con Guacamole</h3>
+              <span class="menu-price">$6.95</span>
+            </div>
+            <p data-i18n="mi_tostones_guac">Fried green plantains with fresh guacamole</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Patacones con Hogao</h3>
+              <span class="menu-price">$5.95</span>
+            </div>
+            <p data-i18n="mi_patacones">Crispy plantain rounds with tomato-onion sauce</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chorizo Santarosano</h3>
+              <span class="menu-price">$5.25</span>
+            </div>
+            <p data-i18n="mi_chorizo">Grilled Colombian chorizo sausage</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chicharron</h3>
+              <span class="menu-price">$7.50</span>
+            </div>
+            <p data-i18n="mi_chicharron">Crispy fried pork belly</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platos Tipicos -->
+      <div class="menu-category" id="cat-tipicos">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Bandeja Mixta</h3>
+              <span class="menu-price">$16.95</span>
+            </div>
+            <p data-i18n="mi_bandeja">Rice, beans, chicharron, chorizo, egg, arepa, avocado, and plantain</p>
+            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Churrasco</h3>
+              <span class="menu-price">$17.75</span>
+            </div>
+            <p data-i18n="mi_churrasco">Grilled skirt steak with rice, beans, and salad</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Entra&ntilde;a Asada</h3>
+              <span class="menu-price">$18.25</span>
+            </div>
+            <p data-i18n="mi_entrana">Grilled flank steak with chimichurri</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Sobrebarriga</h3>
+              <span class="menu-price">$14.95</span>
+            </div>
+            <p data-i18n="mi_sobrebarriga">Braised flank steak in creole sauce with potatoes</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Lengua en Salsa</h3>
+              <span class="menu-price">$13.95</span>
+            </div>
+            <p data-i18n="mi_lengua">Beef tongue in rich tomato sauce</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Sancocho</h3>
+              <span class="menu-price">$12.50</span>
+            </div>
+            <p data-i18n="mi_sancocho">Hearty Colombian chicken soup with corn, plantain, and yuca</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Ajiaco</h3>
+              <span class="menu-price">$12.50</span>
+            </div>
+            <p data-i18n="mi_ajiaco">Traditional Bogota chicken soup with potatoes and corn</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa Rellena de Pollo</h3>
+              <span class="menu-price">$7.95</span>
+            </div>
+            <p data-i18n="mi_arepa_pollo">Stuffed arepa with seasoned shredded chicken</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa Rellena de Carne</h3>
+              <span class="menu-price">$7.95</span>
+            </div>
+            <p data-i18n="mi_arepa_carne_r">Stuffed arepa with seasoned shredded beef</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arepa de Choclo</h3>
+              <span class="menu-price">$6.95</span>
+            </div>
+            <p data-i18n="mi_arepa_choclo">Sweet corn arepa with cheese</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seafood -->
+      <div class="menu-category" id="cat-seafood">
+        <div class="menu-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Pargo Rojo Frito</h3>
+              <span class="menu-price">$21.95</span>
+            </div>
+            <p data-i18n="mi_pargo">Whole fried red snapper with coconut rice</p>
+            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Camarones al Ajillo</h3>
+              <span class="menu-price">$18.95</span>
+            </div>
+            <p data-i18n="mi_camarones">Garlic shrimp with rice and salad</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>El Pescador</h3>
+              <span class="menu-price">$19.95</span>
+            </div>
+            <p data-i18n="mi_pescador">Seafood platter with fish, shrimp, and calamari</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Mojarra Frita</h3>
+              <span class="menu-price">$16.95</span>
+            </div>
+            <p data-i18n="mi_mojarra">Whole fried tilapia with patacones</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Cazuela de Mariscos</h3>
+              <span class="menu-price">$17.95</span>
+            </div>
+            <p data-i18n="mi_cazuela">Creamy seafood stew with coconut</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Filete de Pescado</h3>
+              <span class="menu-price">$11.95</span>
+            </div>
+            <p data-i18n="mi_filete">Grilled fish fillet with rice and salad</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sandwiches -->
+      <div class="menu-category" id="cat-sandwiches">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Hamburguesa Colombiana</h3>
+              <span class="menu-price">$6.95</span>
+            </div>
+            <p data-i18n="mi_hamburguesa">Colombian-style burger with all the fixings</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Perro Caliente Colombiano</h3>
+              <span class="menu-price">$6.00</span>
+            </div>
+            <p data-i18n="mi_perro">Colombian hot dog with pineapple sauce and crushed chips</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Sandwich de Pollo</h3>
+              <span class="menu-price">$6.50</span>
+            </div>
+            <p data-i18n="mi_sandwich_pollo">Grilled chicken sandwich</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Burrito de Carne</h3>
+              <span class="menu-price">$10.95</span>
+            </div>
+            <p data-i18n="mi_burrito_carne">Beef burrito with rice, beans, and salsa</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Burrito de Pollo</h3>
+              <span class="menu-price">$9.95</span>
+            </div>
+            <p data-i18n="mi_burrito_pollo">Chicken burrito with rice, beans, and salsa</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Quesadilla de Carne</h3>
+              <span class="menu-price">$8.95</span>
+            </div>
+            <p data-i18n="mi_quesadilla">Beef quesadilla with cheese and peppers</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tacos de Carne</h3>
+              <span class="menu-price">$7.95</span>
+            </div>
+            <p data-i18n="mi_tacos">Three beef tacos with cilantro and onion</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Nachos Supreme</h3>
+              <span class="menu-price">$12.50</span>
+            </div>
+            <p data-i18n="mi_nachos">Loaded nachos with beef, cheese, and jalape&ntilde;os</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bakery (Default Active) -->
+      <div class="menu-category active" id="cat-bakery">
+        <div class="menu-grid sides-grid">
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Pan de Bono</h3>
+              <span class="menu-price">$1.25</span>
+            </div>
+            <p data-i18n="mi_pan_bono">Traditional Colombian cheese bread</p>
+            <span class="menu-badge badge-heritage">Desde 1987</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Empanada</h3>
+              <span class="menu-price">$1.25</span>
+            </div>
+            <p data-i18n="mi_empanada">Crispy corn turnover with seasoned beef</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Bu&ntilde;uelo</h3>
+              <span class="menu-price">$1.00</span>
+            </div>
+            <p data-i18n="mi_bunuelo">Golden fried cheese ball</p>
+            <span class="menu-badge" data-i18n="badge_signature">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Almojabana</h3>
+              <span class="menu-price">$1.50</span>
+            </div>
+            <p data-i18n="mi_almojabana">Sweet corn and cheese bread roll</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Croissant</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_croissant">Freshly baked butter croissant</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pastel de Pollo</h3>
+              <span class="menu-price">$2.75</span>
+            </div>
+            <p data-i18n="mi_pastel_pollo">Flaky pastry filled with seasoned chicken</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pastel de Arequipe</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_pastel_arequipe">Pastry filled with dulce de leche</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Rosc&oacute;n</h3>
+              <span class="menu-price">$1.75</span>
+            </div>
+            <p data-i18n="mi_roscon">Traditional Colombian sweet bread ring</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pan de Queso</h3>
+              <span class="menu-price">$1.50</span>
+            </div>
+            <p data-i18n="mi_pan_queso">Cheese-filled bread roll</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Torta de Chocolate</h3>
+              <span class="menu-price">$3.75</span>
+            </div>
+            <p data-i18n="mi_torta_choc">Rich Colombian chocolate cake slice</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tres Leches</h3>
+              <span class="menu-price">$3.50</span>
+            </div>
+            <p data-i18n="mi_tres_leches">Three milk cake, a Latin classic</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pandebono con Bocadillo</h3>
+              <span class="menu-price">$2.00</span>
+            </div>
+            <p data-i18n="mi_pandebono_bocadillo">Cheese bread with guava paste</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beverages -->
+      <div class="menu-category" id="cat-beverages">
+        <div class="menu-grid sides-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Caf&eacute; Colombiano</h3>
+              <span class="menu-price">$2.00</span>
+            </div>
+            <p data-i18n="mi_cafe">Fresh brewed Colombian coffee</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Chocolate Caliente</h3>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p data-i18n="mi_chocolate">Traditional hot chocolate with cheese</p>
+          </div>
+          <div class="menu-item featured">
+            <div class="menu-item-header">
+              <h3>Jugo Natural</h3>
+              <span class="menu-price">$3.50</span>
+            </div>
+            <p data-i18n="mi_jugo">Fresh squeezed fruit juice (mango, guanabana, lulo, mora)</p>
+            <span class="menu-badge badge-fresh" data-i18n="badge_fresh">Fresh</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Agua de Panela</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_panela">Traditional sugarcane water with lime</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Cerveza Nacional</h3>
+              <span class="menu-price">$4.50</span>
+            </div>
+            <p data-i18n="mi_cerveza">Colombian beer (Aguila, Club Colombia, Poker)</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Avena</h3>
+              <span class="menu-price">$3.00</span>
+            </div>
+            <p data-i18n="mi_avena">Colombian oat drink, served cold</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Arom&aacute;tica</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_aromatica">Herbal tea infusion</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Malta</h3>
+              <span class="menu-price">$2.50</span>
+            </div>
+            <p data-i18n="mi_malta">Non-alcoholic malt beverage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="gallery_tag">Gallery</span>
+        <h2 class="section-title" data-i18n="gallery_title">Feast Your Eyes</h2>
+        <p class="section-desc" data-i18n="gallery_desc">A glimpse of our dishes and the warmth of our bakery</p>
+      </div>
+      <div class="gallery-wrapper">
+        <button class="gallery-btn prev" aria-label="Previous">&#8249;</button>
+        <button class="gallery-btn next" aria-label="Next">&#8250;</button>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="/images/gallery-1.jpg" alt="Bandeja Paisa" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-2.jpg" alt="Empanadas and Buñuelos" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-3.jpg" alt="Bakery Display" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-4.jpg" alt="Cakes and Pastries" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-5.jpg" alt="Colombian Meal" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-6.jpg" alt="Tostones con Carne" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-7.jpg" alt="Pan de Bono and Coffee" loading="lazy"></div>
+          <div class="gallery-item"><img src="/images/gallery-8.jpg" alt="Breakfast Plate" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="reviews_tag">Testimonials</span>
+        <h2 class="section-title" data-i18n="reviews_title">What Our Customers Say</h2>
+        <p class="section-desc" data-i18n="reviews_desc">Over 1,800 reviews and counting</p>
+      </div>
+      <div class="reviews-grid">
+        <a href="https://www.yelp.com/biz/seba-seba-bakery-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;Seba Seba is one of those true Colombian gems on Northern Boulevard. Full Colombian breakfast made fresh to order with a huge variety of Colombian breads.&rdquo;</p>
+          <div class="review-author">John G. <span class="review-source">Yelp</span></div>
+        </a>
+        <a href="https://www.yelp.com/biz/seba-seba-coffee-shop-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;The Bandeja Paisa with an empanada, bu&ntilde;uelo, and hot chocolate will be my breakfast order for life.&rdquo;</p>
+          <div class="review-author">Sebastian A. <span class="review-source">Yelp</span></div>
+        </a>
+        <a href="https://www.yelp.com/biz/seba-seba-bakery-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;This incredibly special neighborhood spot has friendly and kind staff, reasonable pricing, and fresh items that are still warm.&rdquo;</p>
+          <div class="review-author">Vincent C. <span class="review-source">Yelp</span></div>
+        </a>
+        <a href="https://www.theinfatuation.com/new-york/reviews/seba-seba" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;Amazing food and incredible service. It makes you feel like you&rsquo;re home.&rdquo;</p>
+          <div class="review-author">Diego M. <span class="review-source">The Infatuation</span></div>
+        </a>
+        <a href="https://www.yelp.com/biz/seba-seba-bakery-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;Excellent food, great people. Valentina went above and beyond explaining the pastries and offering samples.&rdquo;</p>
+          <div class="review-author">Mijail A. <span class="review-source">Yelp</span></div>
+        </a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g47960-d26973929-Reviews-Seba_Seba_Bakery-Jackson_Heights_Queens_New_York.html" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;The pan con queso tasted fresh and the empanadas were delicious. Nice environment with cute fall decor.&rdquo;</p>
+          <div class="review-author">Salina L. <span class="review-source">TripAdvisor</span></div>
+        </a>
+        <a href="https://www.yelp.com/biz/seba-seba-coffee-shop-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;So good, so close, so consistent. Seba Seba stands out among Jackson Heights&rsquo; great Colombian food.&rdquo;</p>
+          <div class="review-author">Miguel C. <span class="review-source">Yelp</span></div>
+        </a>
+        <a href="https://www.yelp.com/biz/seba-seba-bakery-jackson-heights" target="_blank" rel="noopener" class="review-card review-card-link">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;Don&rsquo;t tell everyone&hellip; but they have the best pan de bonos!&rdquo;</p>
+          <div class="review-author">Heidi M. <span class="review-source">Yelp</span></div>
+        </a>
+      </div>
+      <div class="reviews-cta">
+        <a href="https://www.yelp.com/biz/seba-seba-bakery-jackson-heights" target="_blank" rel="noopener" class="btn btn-small btn-reviews" data-i18n="reviews_yelp">See All Reviews on Yelp</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g47960-d26973929-Reviews-Seba_Seba_Bakery-Jackson_Heights_Queens_New_York.html" target="_blank" rel="noopener" class="btn btn-small btn-reviews" data-i18n="reviews_tripadvisor">TripAdvisor Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="section locations" id="locations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="locations_tag">Visit Us</span>
+        <h2 class="section-title" data-i18n="locations_title">Our Locations</h2>
+        <p class="section-desc" data-i18n="locations_desc">Three locations across Jackson Heights &amp; Corona, Queens</p>
+      </div>
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-image">
+            <img src="/images/location-northern.jpg" alt="Seba Seba Original Bakery on Northern Blvd">
+            <span class="location-label" data-i18n="loc_est">Est. 1987</span>
+          </div>
+          <h3 data-i18n="loc_northern_name">Original Bakery</h3>
+          <div class="location-details">
+            <p class="location-address">83-03 Northern Blvd<br>Jackson Heights, NY 11372</p>
+            <p class="location-phone"><a href="tel:+17183354548">(718) 335-4548</a></p>
+            <div class="location-hours">
+              <p><strong data-i18n="hours_weekdays">Mon &ndash; Fri:</strong> 5:30 AM &ndash; 10:00 PM</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=83-03+Northern+Blvd+Jackson+Heights+NY+11372" target="_blank" rel="noopener" class="btn btn-small" data-i18n="btn_directions">Get Directions</a>
+        </div>
+        <div class="location-card">
+          <div class="location-image">
+            <img src="/images/location-37th.jpg" alt="Seba Seba Coffee Shop on 37th Ave">
+          </div>
+          <h3 data-i18n="loc_37th_name">Coffee Shop &amp; Restaurant</h3>
+          <div class="location-details">
+            <p class="location-address">79-28 37th Ave<br>Jackson Heights, NY 11372</p>
+            <p class="location-phone"><a href="tel:+17184784691">(718) 478-4691</a></p>
+            <div class="location-hours">
+              <p><strong data-i18n="hours_everyday">Mon &ndash; Sun:</strong> 6:00 AM &ndash; 10:00 PM</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=79-28+37th+Ave+Jackson+Heights+NY+11372" target="_blank" rel="noopener" class="btn btn-small" data-i18n="btn_directions">Get Directions</a>
+        </div>
+        <div class="location-card">
+          <div class="location-image">
+            <img src="/images/location-corona.jpg" alt="Seba Seba Bakery in Corona">
+          </div>
+          <h3 data-i18n="loc_corona_name">Bakery &amp; Restaurant</h3>
+          <div class="location-details">
+            <p class="location-address">96-01 Roosevelt Ave<br>Corona, NY 11368</p>
+          </div>
+          <a href="https://maps.google.com/?q=96-01+Roosevelt+Ave+Corona+NY+11368" target="_blank" rel="noopener" class="btn btn-small" data-i18n="btn_directions">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="section instagram-section" id="instagram">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="instagram_tag">Follow Us</span>
+        <h2 class="section-title" data-i18n="instagram_title">We&rsquo;re on Instagram</h2>
+        <p class="section-desc" data-i18n="instagram_desc">Stay connected with our latest baked goods, daily specials, and behind-the-scenes moments</p>
+      </div>
+      <div class="instagram-cta">
+        <a href="https://www.instagram.com/sebasebabakery/" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span data-i18n="instagram_btn">@sebasebabakery</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="/images/about.jpg" alt="Inside the original Seba Seba bakery">
+        </div>
+        <div class="about-content">
+          <span class="section-tag" data-i18n="about_tag">Our Story</span>
+          <h2 class="section-title" data-i18n="about_title">A Colombian Tradition Since 1987</h2>
+          <p data-i18n="about_p1">Founded in 1987 by David Velasquez's father and uncle, Seba Seba began as a small Colombian bakery on Northern Boulevard in Jackson Heights. What started as a neighborhood panaderia quickly became a beloved community landmark, known for its fresh-baked pan de bono, golden empanadas, and the warm aroma of Colombian coffee.</p>
+          <p data-i18n="about_p2">Nearly four decades later, Seba Seba has grown to three locations across Jackson Heights and Corona, but the commitment to authentic Colombian flavors remains unchanged. Every pastry is baked fresh daily, every dish is prepared with traditional recipes, and every customer is treated like family.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">37+</span>
+              <span class="stat-label" data-i18n="stat_years">Years</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1,800+</span>
+              <span class="stat-label" data-i18n="stat_reviews">Reviews</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label" data-i18n="stat_locations">Locations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="contact_tag">Get In Touch</span>
+        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+        <p class="section-desc" data-i18n="contact_desc">Have a question or want to place a large order? Reach out to any of our locations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-i18n="contact_quick">Quick Contact</h3>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p><strong data-i18n="loc_northern_name">Original Bakery:</strong> <a href="tel:+17183354548">(718) 335-4548</a></p>
+              <p><strong data-i18n="loc_37th_name">Coffee Shop &amp; Restaurant:</strong> <a href="tel:+17184784691">(718) 478-4691</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <p><strong data-i18n="loc_northern_name">Original Bakery:</strong> <span data-i18n="hours_northern">Mon&ndash;Fri 5:30AM&ndash;10PM</span></p>
+              <p><strong data-i18n="loc_37th_name">Coffee Shop:</strong> <span data-i18n="hours_37th">Mon&ndash;Sun 6AM&ndash;10PM</span></p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/sebasebabakery/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/SebaSebaCorna/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <h3 data-i18n="contact_send">Send Us a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" data-i18n-placeholder="ph_name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" data-i18n-placeholder="ph_email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="location" name="location">
+                <option value="" data-i18n="ph_location">Select Location</option>
+                <option value="northern-blvd" data-i18n="loc_northern_name">Original Bakery</option>
+                <option value="37th-ave" data-i18n="loc_37th_name">Coffee Shop &amp; Restaurant</option>
+                <option value="corona" data-i18n="loc_corona_name">Bakery &amp; Restaurant</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" placeholder="Your Message" data-i18n-placeholder="ph_message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="btn_send">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/images/logo.png" alt="Seba Seba" class="footer-logo-img">
+          <p data-i18n="footer_desc">Authentic Colombian bakery and restaurant since 1987. Three locations in Queens, NY serving traditional flavors baked fresh daily.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_links">Quick Links</h4>
+          <a href="#home" data-i18n="nav_home">Home</a>
+          <a href="#menu" data-i18n="nav_menu">Menu</a>
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#locations" data-i18n="nav_locations">Locations</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="footer-locations">
+          <h4 data-i18n="locations_title">Our Locations</h4>
+          <p data-i18n="footer_areas">Jackson Heights &bull; Corona</p>
+          <p data-i18n="footer_city">Queens, New York</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Seba Seba. <span data-i18n="footer_rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/i18n.js"></script>
+</body>
+</html>
