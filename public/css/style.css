@@ -379,10 +379,10 @@ ul { list-style: none; }
   inset: 0;
   background:
     linear-gradient(180deg,
-      rgba(25, 16, 10, 0.7) 0%,
-      rgba(25, 16, 10, 0.4) 40%,
-      rgba(25, 16, 10, 0.5) 70%,
-      rgba(25, 16, 10, 0.85) 100%
+      rgba(25, 16, 10, 0.75) 0%,
+      rgba(25, 16, 10, 0.5) 40%,
+      rgba(25, 16, 10, 0.6) 70%,
+      rgba(25, 16, 10, 0.88) 100%
     );
   z-index: 1;
 }
@@ -427,6 +427,7 @@ ul { list-style: none; }
   animation: fadeInUp 0.8s 0.2s ease both;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
 }
 
 .title-seba {
@@ -435,7 +436,7 @@ ul { list-style: none; }
 }
 
 .title-seba-accent {
-  color: var(--color-gold-light);
+  color: #d94432;
   display: inline-block;
   font-style: normal;
 }
@@ -444,7 +445,7 @@ ul { list-style: none; }
   font-family: var(--font-body);
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 300;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.95);
   letter-spacing: 0.08em;
   margin-bottom: 20px;
   animation: fadeInUp 0.8s 0.35s ease both;
@@ -452,7 +453,7 @@ ul { list-style: none; }
 
 .hero-text {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.85);
   line-height: 1.7;
   max-width: 520px;
   margin: 0 auto 36px;
