@@ -1710,6 +1710,45 @@ ul { list-style: none; }
   .hero-scroll-hint { display: none; }
 }
 
+/* --- Watermark Overlay ------------------------------------------------- */
+.watermark-overlay {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  transform: rotate(-30deg);
+}
+
+.watermark-track {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.watermark-track span {
+  display: block;
+  white-space: nowrap;
+  font-family: var(--font-body, sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+  user-select: none;
+}
+
+/* Alternate rows offset for staggered look */
+.watermark-track span:nth-child(even) {
+  padding-left: 200px;
+}
+
 /* --- Safe area insets for notched phones ------------------------------- */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .footer { padding-bottom: calc(28px + env(safe-area-inset-bottom)); }
