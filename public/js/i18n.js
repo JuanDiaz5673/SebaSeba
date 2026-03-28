@@ -113,10 +113,10 @@ const translations = {
     reviews_desc: 'Over 1,800 reviews and counting',
     // Locations
     locations_tag: 'Visit Us', locations_title: 'Our Locations',
-    locations_desc: 'Three locations across Jackson Heights & Corona, Queens',
+    locations_desc: 'Two locations in Jackson Heights, Queens',
     btn_directions: 'Get Directions',
     loc_northern_name: 'Original Bakery', loc_37th_name: 'Coffee Shop & Restaurant',
-    loc_corona_name: 'Bakery & Restaurant', loc_est: 'Est. 1987',
+    loc_est: 'Est. 1987',
     // Instagram
     instagram_tag: 'Follow Us', instagram_title: 'We\'re on Instagram',
     instagram_desc: 'Stay connected with our latest baked goods, daily specials, and behind-the-scenes moments',
@@ -124,7 +124,7 @@ const translations = {
     // About
     about_tag: 'Our Story', about_title: 'A Colombian Tradition Since 1987',
     about_p1: 'Founded in 1987 by David Velasquez\'s father and uncle, Seba Seba began as a small Colombian bakery on Northern Boulevard in Jackson Heights. What started as a neighborhood panaderia quickly became a beloved community landmark, known for its fresh-baked pan de bono, golden empanadas, and the warm aroma of Colombian coffee.',
-    about_p2: 'Nearly four decades later, Seba Seba has grown to three locations across Jackson Heights and Corona, but the commitment to authentic Colombian flavors remains unchanged. Every pastry is baked fresh daily, every dish is prepared with traditional recipes, and every customer is treated like family.',
+    about_p2: 'Nearly four decades later, Seba Seba has grown to two locations in Jackson Heights, but the commitment to authentic Colombian flavors remains unchanged. Every pastry is baked fresh daily, every dish is prepared with traditional recipes, and every customer is treated like family.',
     stat_years: 'Years', stat_reviews: 'Reviews', stat_locations: 'Locations',
     // Contact
     contact_tag: 'Get In Touch', contact_title: 'Contact Us',
@@ -138,9 +138,9 @@ const translations = {
     hours_weekdays: 'Mon \u2013 Fri:', hours_everyday: 'Mon \u2013 Sun:',
     hours_northern: 'Mon\u2013Fri 5:30AM\u201310PM', hours_37th: 'Mon\u2013Sun 6AM\u201310PM',
     // Footer
-    footer_desc: 'Authentic Colombian bakery and restaurant since 1987. Three locations in Queens, NY serving traditional flavors baked fresh daily.',
+    footer_desc: 'Authentic Colombian bakery and restaurant since 1987. Two locations in Jackson Heights, Queens serving traditional flavors baked fresh daily.',
     footer_links: 'Quick Links', footer_rights: 'All rights reserved.',
-    footer_areas: 'Jackson Heights \u2022 Corona', footer_city: 'Queens, New York',
+    footer_areas: 'Jackson Heights, Queens', footer_city: 'Queens, New York',
   },
   es: {
     // Nav
@@ -256,10 +256,10 @@ const translations = {
     reviews_desc: 'M\u00e1s de 1,800 rese\u00f1as y contando',
     // Locations
     locations_tag: 'Vis\u00edtanos', locations_title: 'Nuestras Ubicaciones',
-    locations_desc: 'Tres ubicaciones en Jackson Heights y Corona, Queens',
+    locations_desc: 'Dos ubicaciones en Jackson Heights, Queens',
     btn_directions: 'C\u00f3mo Llegar',
     loc_northern_name: 'Panader\u00eda Original', loc_37th_name: 'Caf\u00e9 y Restaurante',
-    loc_corona_name: 'Panader\u00eda y Restaurante', loc_est: 'Desde 1987',
+    loc_est: 'Desde 1987',
     // Instagram
     instagram_tag: 'S\u00edguenos', instagram_title: 'Estamos en Instagram',
     instagram_desc: 'Mantente conectado con nuestros productos reci\u00e9n horneados, especiales del d\u00eda y momentos detr\u00e1s de escena',
@@ -267,7 +267,7 @@ const translations = {
     // About
     about_tag: 'Nuestra Historia', about_title: 'Una Tradici\u00f3n Colombiana Desde 1987',
     about_p1: 'Fundada en 1987 por el padre y el t\u00edo de David Vel\u00e1squez, Seba Seba comenz\u00f3 como una peque\u00f1a panader\u00eda colombiana en Northern Boulevard en Jackson Heights. Lo que empez\u00f3 como una panader\u00eda de barrio r\u00e1pidamente se convirti\u00f3 en un punto de referencia comunitario, conocido por su pan de bono reci\u00e9n horneado, empanadas doradas y el c\u00e1lido aroma del caf\u00e9 colombiano.',
-    about_p2: 'Casi cuatro d\u00e9cadas despu\u00e9s, Seba Seba ha crecido a tres ubicaciones en Jackson Heights y Corona, pero el compromiso con los sabores aut\u00e9nticos colombianos permanece sin cambios. Cada pasteler\u00eda se hornea fresca a diario, cada plato se prepara con recetas tradicionales, y cada cliente es tratado como familia.',
+    about_p2: 'Casi cuatro d\u00e9cadas despu\u00e9s, Seba Seba ha crecido a dos ubicaciones en Jackson Heights, pero el compromiso con los sabores aut\u00e9nticos colombianos permanece sin cambios. Cada pasteler\u00eda se hornea fresca a diario, cada plato se prepara con recetas tradicionales, y cada cliente es tratado como familia.',
     stat_years: 'A\u00f1os', stat_reviews: 'Rese\u00f1as', stat_locations: 'Ubicaciones',
     // Contact
     contact_tag: 'Cont\u00e1ctanos', contact_title: 'Cont\u00e1ctenos',
@@ -281,9 +281,9 @@ const translations = {
     hours_weekdays: 'Lun \u2013 Vie:', hours_everyday: 'Lun \u2013 Dom:',
     hours_northern: 'Lun\u2013Vie 5:30AM\u201310PM', hours_37th: 'Lun\u2013Dom 6AM\u201310PM',
     // Footer
-    footer_desc: 'Panader\u00eda y restaurante colombiano aut\u00e9ntico desde 1987. Tres ubicaciones en Queens, NY sirviendo sabores tradicionales horneados frescos a diario.',
+    footer_desc: 'Panader\u00eda y restaurante colombiano aut\u00e9ntico desde 1987. Dos ubicaciones en Jackson Heights, Queens sirviendo sabores tradicionales horneados frescos a diario.',
     footer_links: 'Enlaces R\u00e1pidos', footer_rights: 'Todos los derechos reservados.',
-    footer_areas: 'Jackson Heights \u2022 Corona', footer_city: 'Queens, Nueva York',
+    footer_areas: 'Jackson Heights, Queens', footer_city: 'Queens, Nueva York',
   }
 };
 
