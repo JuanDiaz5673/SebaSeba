@@ -1489,9 +1489,13 @@ ul { list-style: none; }
     color: var(--color-gold-light);
   }
 
-  /* Lang toggle — keep in top bar, push right */
+  /* Lang toggle — push to far right, after hamburger */
   .lang-toggle {
     margin-left: auto;
+    order: 3;
+  }
+  .nav-toggle {
+    order: 2;
   }
 
   /* Sections */
