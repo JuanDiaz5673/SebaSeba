@@ -2,10 +2,44 @@
 window.history.scrollRestoration = 'manual';
 window.scrollTo(0, 0);
 
-// Navbar scroll effect
+// Navbar scroll effect + active nav link — single throttled scroll handler
 const navbar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section[id]');
+const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+
+let ticking = false;
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    const scrollY = window.scrollY;
+
+    // Navbar background
+    navbar.classList.toggle('scrolled', scrollY > 50);
+
+    // Active nav link highlighting
+    const offset = scrollY + 120;
+    let currentSection = '';
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      const link = document.querySelector(`.nav-link[href="#${id}"]`);
+      const isActive = offset >= top && offset < top + height;
+      if (link) link.classList.toggle('active', isActive);
+      if (isActive) currentSection = id;
+    });
+
+    // Update bottom nav active state
+    bottomNavItems.forEach(item => {
+      const section = item.dataset.section;
+      const mapped = (currentSection === 'reviews' || currentSection === 'instagram' || currentSection === 'about')
+        ? 'gallery' : currentSection;
+      item.classList.toggle('active', section === mapped);
+    });
+
+    ticking = false;
+  });
 });
 
 // Mobile menu toggle
@@ -36,38 +70,6 @@ navBackdrop.addEventListener('click', closeMenu);
 // Close mobile menu on link click
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', closeMenu);
-});
-
-// Active nav link on scroll (top nav + bottom nav)
-const sections = document.querySelectorAll('section[id]');
-const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY + 120;
-  let currentSection = '';
-
-  sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-    const id = section.getAttribute('id');
-    const link = document.querySelector(`.nav-link[href="#${id}"]`);
-    const isActive = scrollY >= top && scrollY < top + height;
-    if (link) {
-      link.classList.toggle('active', isActive);
-    }
-    if (isActive) {
-      currentSection = id;
-    }
-  });
-
-  // Update bottom nav active state
-  bottomNavItems.forEach(item => {
-    const section = item.dataset.section;
-    // Map sections that don't have their own bottom nav item
-    const mapped = (currentSection === 'reviews' || currentSection === 'instagram' || currentSection === 'about')
-      ? 'gallery' : currentSection;
-    item.classList.toggle('active', section === mapped);
-  });
 });
 
 // Close mobile menu when bottom nav is tapped
