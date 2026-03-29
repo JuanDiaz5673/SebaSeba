@@ -1742,11 +1742,12 @@ ul { list-style: none; }
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.25);
   user-select: none;
+  text-align: center;
 }
 
 /* Alternate rows offset for staggered look */
 .watermark-track span:nth-child(even) {
-  padding-left: 200px;
+  margin-left: 200px;
 }
 
 /* --- Safe area insets for notched phones ------------------------------- */
